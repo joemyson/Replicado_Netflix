@@ -1,0 +1,129 @@
+
+:root{
+
+    --vermelho:#E50914;
+    --preto:#141414;
+}
+
+*{
+
+padding: 0;
+margin: 0;
+box-sizing: border-box;/*inpedir que os elemento saia pela bordas*/
+
+}
+
+body{
+   
+background: var(--preto);/*uso de variavel localizado no :root para determina cores padrão do projeto*/
+font-family:'Times New Roman', Times, serif;
+color:white;
+
+}
+.tituloPricipal{
+
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color:white;
+}
+
+/*inicio propriedade do cabeçario*/
+/*formata posição do menu e logo principal*/
+header .container{
+
+display: flex;/*coloca em formato de linha*/
+flex-direction: row;
+align-items: center;
+justify-content: space-between;/*coloca um espaço entre os elemento do contenier*/
+
+}
+
+header .logo{
+
+margin-left: 5px;
+color: var(--vermelho);
+font-family: Arial, Helvetica, sans-serif;
+font-size: 40px;
+
+}
+/* efeito no menu */
+
+header nav a{
+
+text-decoration: none;/*retira linhas da caixa de borda do cabeçario*/
+color: #aaa;
+margin-right: 10px;
+
+}
+/*efeito ao passa o mause uso do "hover"com uso de eventos css*/
+header nav a:hover{
+    color: #fff;
+}
+
+/*final da propriedade do cabeçario*/
+
+/* classe filme principal*/
+.filme_principal{
+
+font-size: 16px;
+background:linear-gradient(rgba(0,0,0,.05),rgba(0,0,0,.05)100%), url("/img/CRUELA_FUNDO.png");
+height: 800px;
+background-size: cover;
+
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: flex-start;
+
+}
+.filme_principal .descricao{
+
+    margin-bottom: 40px;
+    margin-top: 10px;
+
+}
+.tituloPricipal{
+
+margin-top: 15%;    
+font-size: 40px;
+font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+}
+
+.botao{
+    background-color: rgba(0,0,0,.50);
+    border: none;
+    color: white;
+    padding: 15px 30px;/*cria em volta das bordas dos botoes*/
+    margin-right: 15px;
+    font-size: 20px;
+    cursor: pointer;
+    transition: .1s ease all;/*tempo de efeito do botao com hover*/
+
+
+}
+.botao:hover{
+
+    background-color: white;
+    color: black;
+}
+
+.botao i{
+
+    margin-right: 8px;
+
+}
+
+.container{
+    margin-left: 30px;
+}
+.filme_principal .container{
+
+    width: 70%;
+}
+
+.box-filmes{
+
+    width: 50%;
+    height: 50%;
+    display: block;
+}
